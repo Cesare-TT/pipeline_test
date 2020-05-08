@@ -36,3 +36,8 @@ steps:
     #failOnStderr: false # Optional
     #noProfile: true # Optional
     #noRc: true # Optional
+
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: '/pipeline_test.py'

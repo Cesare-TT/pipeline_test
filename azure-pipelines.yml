@@ -40,4 +40,4 @@ steps:
 - task: PythonScript@0
   inputs:
     scriptSource: 'filePath'
-    scriptPath: '/pipeline_test.py'
+    scriptPath: '$(System.DefaultWorkingDirectory)/pipeline_test.py'

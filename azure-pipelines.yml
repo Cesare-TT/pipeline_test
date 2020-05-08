@@ -28,7 +28,10 @@ steps:
     targetType: inline
     #filePath: # Required when targetType == FilePath
     #arguments: # Optional
-    script: 'echo Pipeline Test' # Required when targetType == inline
+    script: 'echo Hello World' # Required when targetType == inline
+- task: CmdLine@2
+  inputs:
+    script: 'echo Pipeline Test'
     #workingDirectory: # Optional
     #failOnStderr: false # Optional
     #noProfile: true # Optional
